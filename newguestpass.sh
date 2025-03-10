@@ -5,6 +5,13 @@
 # HTML file with the guest network credentials and a QR code SVG file for
 # easy sharing. The guest network SSID is matched based on a pattern.
 
+# Usage:
+# save into /root
+# set to executable - chmod +x ./newguestpass.sh
+# add cronjob to change credentials 1st of the month at 0300
+# 0 3 1 * * /root/newguestpass.sh
+
+
 # Configuration variables
 HTML_PATH="/www/luci-static/guest.html" # bookmark e.g. http://192.168.1.1/luci-static/guest.html
 SVG_PATH="/www/luci-static/wifi.svg"
