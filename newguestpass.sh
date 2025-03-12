@@ -26,7 +26,7 @@ fi
 
 
 # Generate random SSID and password
-password=$(cat /dev/urandom | env LC_CTYPE=C tr -dc _ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjklmnpqrstuvwxyz23456789 | head -c $PASSWORD_LENGTH)
+password=$(cat /dev/urandom | env LC_CTYPE=C tr -dc _ABCDEFGHJKLMNPQRTUVWXYZabcdefghjklmnpqrtuvwxyz2346789 | head -c $PASSWORD_LENGTH)
 datec=$(date +%Y-%m-%dT%H:%M:%SZ)
 
 # Generate random 3-digit number and append to SSID
